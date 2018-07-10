@@ -14,13 +14,13 @@
         <scene sceneID="dMm-HZ-ieN">
             <objects>
                 <viewController id="F3k-f8-uQs" customClass="FindFriendsViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZNL-PI-zEf">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="ZNL-PI-zEf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yaD-WM-hne"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="tab_find_friends_black" id="ZjU-Jp-6Lm">
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="tab_find_friends_black" id="ZjU-Jp-6Lm">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                 </viewController>
@@ -32,13 +32,13 @@
         <scene sceneID="2c5-1q-Egc">
             <objects>
                 <viewController id="UTU-Yq-ADI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QBc-nS-nxH">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="QBc-nS-nxH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oEd-Ri-wfg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="tab_plus_black" id="zwG-EW-lxl">
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="tab_plus_black" id="zwG-EW-lxl">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                 </viewController>
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="374" y="-464"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="Nmh-J4-zMW">
             <objects>
-                <tabBarController id="Fau-iQ-N9n" sceneMemberID="viewController">
+                <tabBarController id="Fau-iQ-N9n" customClass="MainTabBarController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TgM-3T-xGh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
