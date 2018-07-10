@@ -49,10 +49,6 @@ class User: Codable {
         }
         _current = user
     }
-
-    
-    
-    
     
 }
 

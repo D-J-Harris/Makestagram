@@ -11,6 +11,8 @@
 		BE365BDE20F5511A00230231 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BDD20F5511A00230231 /* StorageService.swift */; };
 		BE365BE020F5537B00230231 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BDF20F5537B00230231 /* PostService.swift */; };
 		BE365BE220F557E100230231 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BE120F557E100230231 /* Post.swift */; };
+		BE365BE420F56FCB00230231 /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BE320F56FCB00230231 /* UIImage+Size.swift */; };
+		BE365BE620F570A900230231 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BE520F570A900230231 /* StorageReference+Post.swift */; };
 		BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87120F46A6F00BE6DA5 /* UserService.swift */; };
 		BE86D87420F4751700BE6DA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87320F4751700BE6DA5 /* Constants.swift */; };
 		BE86D87620F475D300BE6DA5 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */; };
@@ -35,6 +37,8 @@
 		BE365BDD20F5511A00230231 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		BE365BDF20F5537B00230231 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		BE365BE120F557E100230231 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		BE365BE320F56FCB00230231 /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
+		BE365BE520F570A900230231 /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		BE86D87120F46A6F00BE6DA5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		BE86D87320F4751700BE6DA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */,
+				BE365BE320F56FCB00230231 /* UIImage+Size.swift */,
+				BE365BE520F570A900230231 /* StorageReference+Post.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -339,10 +345,12 @@
 				BE86D87C20F4903C00BE6DA5 /* MainTabBarController.swift in Sources */,
 				BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */,
 				BE365BE220F557E100230231 /* Post.swift in Sources */,
+				BE365BE420F56FCB00230231 /* UIImage+Size.swift in Sources */,
 				BE86D87820F47CC300BE6DA5 /* HomeViewController.swift in Sources */,
 				BE86D87E20F4943600BE6DA5 /* MGPhotoHelper.swift in Sources */,
 				BE86D87620F475D300BE6DA5 /* Storyboard+Utility.swift in Sources */,
 				BE86D87A20F47CD600BE6DA5 /* FindFriendsViewController.swift in Sources */,
+				BE365BE620F570A900230231 /* StorageReference+Post.swift in Sources */,
 				BE86D87420F4751700BE6DA5 /* Constants.swift in Sources */,
 				BE365BE020F5537B00230231 /* PostService.swift in Sources */,
 				BECD5BB320F3C5EF00245C92 /* CreateUsernameViewController.swift in Sources */,

@@ -15,7 +15,7 @@ class MainTabBarController: UITabBarController {
     //Properties
     let photoHelper = MGPhotoHelper()
     
-    override func viewDidLoad() {         //How does the code skip the photoHelper and go to the last two commands on initial load?
+    override func viewDidLoad() {   
         super.viewDidLoad()
         
         photoHelper.completionHandler = { image in
