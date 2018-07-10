@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase.FIRDataSnapshot
 
-class User {
+class User: Codable {
     
     //properties
     let uid: String
@@ -28,5 +28,31 @@ class User {
         self.uid = snapshot.key
         self.username = username
     }
+    
+    //Singleton
+    private static var _current: User?
+    
+    static var current: User {
+        guard let currentUser = _current else{
+            fatalError("Error: current user doesn't exist")
+        }
+        return currentUser
+    }
+    
+    //Class methods
+    static func setCurrent(_ user: User, writeToUserDefaults: Bool = false) {
+        
+        if writeToUserDefaults {
+            if let data = try? JSONEncoder().encode(user) {
+                UserDefaults.standard.set(data, forKey: Constants.UserDefaults.currentUser)
+            }
+        }
+        _current = user
+    }
+
+    
+    
+    
+    
 }
 

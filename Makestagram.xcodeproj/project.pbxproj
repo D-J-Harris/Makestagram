@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6DBFA74669CF053328A9EF5F /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E219DBD9C99E0A364F231464 /* Pods_Makestagram.framework */; };
+		BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87120F46A6F00BE6DA5 /* UserService.swift */; };
+		BE86D87420F4751700BE6DA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87320F4751700BE6DA5 /* Constants.swift */; };
+		BE86D87620F475D300BE6DA5 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */; };
+		BE86D87820F47CC300BE6DA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87720F47CC300BE6DA5 /* HomeViewController.swift */; };
+		BE86D87A20F47CD600BE6DA5 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87920F47CD600BE6DA5 /* FindFriendsViewController.swift */; };
 		BECD5B8E20F0771E00245C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD5B8D20F0771E00245C92 /* AppDelegate.swift */; };
-		BECD5B9020F0771E00245C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECD5B8F20F0771E00245C92 /* ViewController.swift */; };
 		BECD5B9320F0771E00245C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECD5B9120F0771E00245C92 /* Main.storyboard */; };
 		BECD5B9520F0772000245C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECD5B9420F0772000245C92 /* Assets.xcassets */; };
 		BECD5B9820F0772000245C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECD5B9620F0772000245C92 /* LaunchScreen.storyboard */; };
@@ -23,9 +27,13 @@
 /* Begin PBXFileReference section */
 		5B6498C7F3FA782F0CFD33B7 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		80A19B5C3B9A4C9B7EEA4BA9 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
+		BE86D87120F46A6F00BE6DA5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		BE86D87320F4751700BE6DA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		BE86D87720F47CC300BE6DA5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BE86D87920F47CD600BE6DA5 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
 		BECD5B8A20F0771E00245C92 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECD5B8D20F0771E00245C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BECD5B8F20F0771E00245C92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BECD5B9220F0771E00245C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BECD5B9420F0772000245C92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BECD5B9720F0772000245C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,9 +113,10 @@
 		BECD5BA320F07F0E00245C92 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BECD5B8F20F0771E00245C92 /* ViewController.swift */,
 				BECD5BAE20F090CE00245C92 /* LoginViewController.swift */,
 				BECD5BB220F3C5EF00245C92 /* CreateUsernameViewController.swift */,
+				BE86D87720F47CC300BE6DA5 /* HomeViewController.swift */,
+				BE86D87920F47CD600BE6DA5 /* FindFriendsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -115,6 +124,7 @@
 		BECD5BA520F07F3000245C92 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -137,6 +147,7 @@
 		BECD5BA820F07F4400245C92 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BE86D87120F46A6F00BE6DA5 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -156,6 +167,7 @@
 			children = (
 				BECD5BA120F07C0000245C92 /* GoogleService-Info.plist */,
 				BECD5B9920F0772000245C92 /* Info.plist */,
+				BE86D87320F4751700BE6DA5 /* Constants.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -308,7 +320,11 @@
 			files = (
 				BECD5BB120F327D600245C92 /* User.swift in Sources */,
 				BECD5BAF20F090CE00245C92 /* LoginViewController.swift in Sources */,
-				BECD5B9020F0771E00245C92 /* ViewController.swift in Sources */,
+				BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */,
+				BE86D87820F47CC300BE6DA5 /* HomeViewController.swift in Sources */,
+				BE86D87620F475D300BE6DA5 /* Storyboard+Utility.swift in Sources */,
+				BE86D87A20F47CD600BE6DA5 /* FindFriendsViewController.swift in Sources */,
+				BE86D87420F4751700BE6DA5 /* Constants.swift in Sources */,
 				BECD5BB320F3C5EF00245C92 /* CreateUsernameViewController.swift in Sources */,
 				BECD5B8E20F0771E00245C92 /* AppDelegate.swift in Sources */,
 			);
