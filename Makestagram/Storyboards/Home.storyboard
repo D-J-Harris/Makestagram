@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,9 +23,52 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s3k-lU-2iQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="mF9-jY-yo4">
+                                    <rect key="frame" x="0.0" y="503" width="375" height="0.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostHeaderCell" rowHeight="54" id="csb-i4-oZN" customClass="PostHeaderCell" customModule="Makestagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="54"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="csb-i4-oZN" id="Lha-fZ-pLY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sE4-gr-1Ii">
+                                                    <rect key="frame" x="30" y="11" width="76" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IER-16-FR3">
+                                                    <rect key="frame" x="316" y="4" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="acK-Mz-ajA"/>
+                                                        <constraint firstAttribute="width" constant="44" id="eFf-g1-rfj"/>
+                                                    </constraints>
+                                                    <state key="normal" image="btn_options_black"/>
+                                                    <connections>
+                                                        <action selector="optionsButtonTapped:" destination="csb-i4-oZN" eventType="touchUpInside" id="LxH-GD-eIW"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IER-16-FR3" firstAttribute="centerY" secondItem="Lha-fZ-pLY" secondAttribute="centerY" id="2YJ-7O-Uja"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="sE4-gr-1Ii" secondAttribute="trailing" constant="15" id="7Vn-UV-vb7"/>
+                                                <constraint firstItem="sE4-gr-1Ii" firstAttribute="leading" secondItem="Lha-fZ-pLY" secondAttribute="leadingMargin" constant="15" id="AXh-dd-CIu"/>
+                                                <constraint firstItem="sE4-gr-1Ii" firstAttribute="top" secondItem="Lha-fZ-pLY" secondAttribute="topMargin" id="JOv-D3-sGD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="sE4-gr-1Ii" secondAttribute="bottom" id="Vee-CF-zET"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IER-16-FR3" secondAttribute="trailing" id="Zbg-Au-N6c"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="usernameLabel" destination="sE4-gr-1Ii" id="rC0-XG-UvQ"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostImageCell" rowHeight="375" id="imd-pc-aOA" customClass="PostImageCell" customModule="Makestagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="375"/>
+                                        <rect key="frame" x="0.0" y="82" width="375" height="375"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="imd-pc-aOA" id="p6a-5n-gbK">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
@@ -42,6 +87,54 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="postImageView" destination="eFR-wj-K2u" id="7z7-R5-3Xe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostActionCell" rowHeight="46" id="4v0-3D-cKn" customClass="PostActionCell" customModule="Makestagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="457" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4v0-3D-cKn" id="ap1-a1-GEY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoX-ob-PS5">
+                                                    <rect key="frame" x="2" y="0.0" width="45.5" height="45.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="BoX-ob-PS5" secondAttribute="height" multiplier="1:1" id="HcR-qH-fmq"/>
+                                                    </constraints>
+                                                    <state key="normal" image="btn_heart_black_outline"/>
+                                                    <connections>
+                                                        <action selector="likeButtonTapped:" destination="4v0-3D-cKn" eventType="touchUpInside" id="Bcq-b9-WCh"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peX-Ag-sTM">
+                                                    <rect key="frame" x="47.5" y="11" width="48" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 MINUTES AGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gk-Hf-AaF">
+                                                    <rect key="frame" x="267" y="0.0" width="93" height="45.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BoX-ob-PS5" firstAttribute="leading" secondItem="ap1-a1-GEY" secondAttribute="leading" constant="2" id="5ew-6w-Ith"/>
+                                                <constraint firstItem="peX-Ag-sTM" firstAttribute="leading" secondItem="BoX-ob-PS5" secondAttribute="trailing" id="IQG-Kr-Cd9"/>
+                                                <constraint firstItem="peX-Ag-sTM" firstAttribute="top" secondItem="ap1-a1-GEY" secondAttribute="topMargin" id="Tql-d5-1Mg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="peX-Ag-sTM" secondAttribute="bottom" id="VoZ-DC-U1F"/>
+                                                <constraint firstItem="BoX-ob-PS5" firstAttribute="top" secondItem="ap1-a1-GEY" secondAttribute="top" id="jcE-N8-vcT"/>
+                                                <constraint firstAttribute="bottom" secondItem="BoX-ob-PS5" secondAttribute="bottom" id="nOS-wc-122"/>
+                                                <constraint firstAttribute="trailing" secondItem="2Gk-Hf-AaF" secondAttribute="trailing" constant="15" id="oCe-rW-X6N"/>
+                                                <constraint firstItem="2Gk-Hf-AaF" firstAttribute="top" secondItem="ap1-a1-GEY" secondAttribute="top" id="tGa-Mu-dRG"/>
+                                                <constraint firstAttribute="bottom" secondItem="2Gk-Hf-AaF" secondAttribute="bottom" id="usc-Nb-WC8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="likeButton" destination="BoX-ob-PS5" id="omY-X7-x8o"/>
+                                            <outlet property="likeCountLabel" destination="peX-Ag-sTM" id="qgS-S1-Ef6"/>
+                                            <outlet property="timeAgoLabel" destination="2Gk-Hf-AaF" id="jzW-dk-F4X"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -93,6 +186,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btn_heart_black_outline" width="24" height="24"/>
+        <image name="btn_options_black" width="24" height="24"/>
         <image name="tab_home_black" width="25" height="25"/>
     </resources>
 </document>

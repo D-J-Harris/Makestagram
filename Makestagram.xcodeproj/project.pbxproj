@@ -15,6 +15,8 @@
 		BE365BE620F570A900230231 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BE520F570A900230231 /* StorageReference+Post.swift */; };
 		BE365BEB20F6746000230231 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE365BEA20F6746000230231 /* Home.storyboard */; };
 		BE365BED20F6ABCD00230231 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BEC20F6ABCD00230231 /* PostImageCell.swift */; };
+		BE365BEF20F6BF1D00230231 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BEE20F6BF1D00230231 /* PostHeaderCell.swift */; };
+		BE365BF120F6C1DC00230231 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BF020F6C1DC00230231 /* PostActionCell.swift */; };
 		BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87120F46A6F00BE6DA5 /* UserService.swift */; };
 		BE86D87420F4751700BE6DA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87320F4751700BE6DA5 /* Constants.swift */; };
 		BE86D87620F475D300BE6DA5 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */; };
@@ -43,6 +45,8 @@
 		BE365BE520F570A900230231 /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		BE365BEA20F6746000230231 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BE365BEC20F6ABCD00230231 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
+		BE365BEE20F6BF1D00230231 /* PostHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
+		BE365BF020F6C1DC00230231 /* PostActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
 		BE86D87120F46A6F00BE6DA5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		BE86D87320F4751700BE6DA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				BE365BEC20F6ABCD00230231 /* PostImageCell.swift */,
+				BE365BEE20F6BF1D00230231 /* PostHeaderCell.swift */,
+				BE365BF020F6C1DC00230231 /* PostActionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,6 +359,7 @@
 				BECD5BAF20F090CE00245C92 /* LoginViewController.swift in Sources */,
 				BE86D87C20F4903C00BE6DA5 /* MainTabBarController.swift in Sources */,
 				BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */,
+				BE365BF120F6C1DC00230231 /* PostActionCell.swift in Sources */,
 				BE365BE220F557E100230231 /* Post.swift in Sources */,
 				BE365BED20F6ABCD00230231 /* PostImageCell.swift in Sources */,
 				BE365BE420F56FCB00230231 /* UIImage+Size.swift in Sources */,
@@ -364,6 +371,7 @@
 				BE86D87420F4751700BE6DA5 /* Constants.swift in Sources */,
 				BE365BE020F5537B00230231 /* PostService.swift in Sources */,
 				BECD5BB320F3C5EF00245C92 /* CreateUsernameViewController.swift in Sources */,
+				BE365BEF20F6BF1D00230231 /* PostHeaderCell.swift in Sources */,
 				BECD5B8E20F0771E00245C92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
