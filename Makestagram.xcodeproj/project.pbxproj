@@ -14,6 +14,7 @@
 		BE365BE420F56FCB00230231 /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BE320F56FCB00230231 /* UIImage+Size.swift */; };
 		BE365BE620F570A900230231 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BE520F570A900230231 /* StorageReference+Post.swift */; };
 		BE365BEB20F6746000230231 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE365BEA20F6746000230231 /* Home.storyboard */; };
+		BE365BED20F6ABCD00230231 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BEC20F6ABCD00230231 /* PostImageCell.swift */; };
 		BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87120F46A6F00BE6DA5 /* UserService.swift */; };
 		BE86D87420F4751700BE6DA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87320F4751700BE6DA5 /* Constants.swift */; };
 		BE86D87620F475D300BE6DA5 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */; };
@@ -41,6 +42,7 @@
 		BE365BE320F56FCB00230231 /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		BE365BE520F570A900230231 /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		BE365BEA20F6746000230231 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		BE365BEC20F6ABCD00230231 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		BE86D87120F46A6F00BE6DA5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		BE86D87320F4751700BE6DA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		BECD5BAB20F07F6000245C92 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BE365BEC20F6ABCD00230231 /* PostImageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -328,6 +332,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -349,6 +354,7 @@
 				BE86D87C20F4903C00BE6DA5 /* MainTabBarController.swift in Sources */,
 				BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */,
 				BE365BE220F557E100230231 /* Post.swift in Sources */,
+				BE365BED20F6ABCD00230231 /* PostImageCell.swift in Sources */,
 				BE365BE420F56FCB00230231 /* UIImage+Size.swift in Sources */,
 				BE86D87820F47CC300BE6DA5 /* HomeViewController.swift in Sources */,
 				BE86D87E20F4943600BE6DA5 /* MGPhotoHelper.swift in Sources */,
