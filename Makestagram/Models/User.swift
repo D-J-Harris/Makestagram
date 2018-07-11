@@ -23,7 +23,7 @@ class User: Codable {
     init?(snapshot: DataSnapshot) {
        guard let dict = snapshot.value as? [String: Any],
             let username = dict["username"] as? String
-        else {return nil}
+            else {return nil}
         
         self.uid = snapshot.key
         self.username = username
@@ -33,7 +33,7 @@ class User: Codable {
     private static var _current: User?
     
     static var current: User {
-        guard let currentUser = _current else{
+        guard let currentUser = _current else {
             fatalError("Error: current user doesn't exist")
         }
         return currentUser

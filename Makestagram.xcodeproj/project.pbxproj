@@ -13,6 +13,7 @@
 		BE365BE220F557E100230231 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BE120F557E100230231 /* Post.swift */; };
 		BE365BE420F56FCB00230231 /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BE320F56FCB00230231 /* UIImage+Size.swift */; };
 		BE365BE620F570A900230231 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BE520F570A900230231 /* StorageReference+Post.swift */; };
+		BE365BEB20F6746000230231 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE365BEA20F6746000230231 /* Home.storyboard */; };
 		BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87120F46A6F00BE6DA5 /* UserService.swift */; };
 		BE86D87420F4751700BE6DA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87320F4751700BE6DA5 /* Constants.swift */; };
 		BE86D87620F475D300BE6DA5 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */; };
@@ -39,6 +40,7 @@
 		BE365BE120F557E100230231 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		BE365BE320F56FCB00230231 /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		BE365BE520F570A900230231 /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
+		BE365BEA20F6746000230231 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BE86D87120F46A6F00BE6DA5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		BE86D87320F4751700BE6DA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		BECD5BA920F07F4E00245C92 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				BE365BEA20F6746000230231 /* Home.storyboard */,
 				BECD5B9620F0772000245C92 /* LaunchScreen.storyboard */,
 				BECD5B9120F0771E00245C92 /* Main.storyboard */,
 				BECD5BAC20F0900200245C92 /* Login.storyboard */,
@@ -264,6 +267,7 @@
 				BECD5B9820F0772000245C92 /* LaunchScreen.storyboard in Resources */,
 				BECD5BA220F07C0000245C92 /* GoogleService-Info.plist in Resources */,
 				BECD5B9520F0772000245C92 /* Assets.xcassets in Resources */,
+				BE365BEB20F6746000230231 /* Home.storyboard in Resources */,
 				BECD5BAD20F0900200245C92 /* Login.storyboard in Resources */,
 				BECD5B9320F0771E00245C92 /* Main.storyboard in Resources */,
 			);
