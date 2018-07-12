@@ -14,6 +14,7 @@ class User: Codable {
     //properties
     let uid: String
     let username: String
+    var isFollowed = false
     
     init(uid: String, username: String){
         self.uid = uid
