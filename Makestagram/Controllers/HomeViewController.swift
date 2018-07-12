@@ -117,10 +117,11 @@ extension HomeViewController: PostActionCellDelegate {
             post.likeCount += !post.isLiked ? 1 : -1
             post.isLiked = !post.isLiked
             
+            
             guard let cell = self.tableView.cellForRow(at: indexPath) as? PostActionCell
                 else {return}
             
-            DispatchQueue.main.sync {
+            DispatchQueue.main.async {
                 self.configureCell(cell, with: post)
             }
         }

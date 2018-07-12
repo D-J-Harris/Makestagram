@@ -14,11 +14,12 @@ class Post {
     
     var dictValue: [String: Any] {
         let createdAgo = creationDate.timeIntervalSince1970
-        _ = ["uid": poster.uid, "username": poster.username]
+        let userDict = ["uid": poster.uid, "username": poster.username]
         return ["image_url": imageURL,
                 "image_height": imageHeight,
                 "like_count": likeCount,
-                "createdAt": createdAgo]
+                "createdAt": createdAgo,
+                "poster": userDict]
     }
     
     var key: String?

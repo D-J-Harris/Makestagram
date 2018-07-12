@@ -51,19 +51,21 @@ struct UserService {
             
             let posts: [Post] = snapshot.reversed().compactMap {
                 guard let post = Post(snapshot: $0)
-                    else {
-                        return nil
-                }
-                
+                    else { return nil }
+
                 dispatchGroup.enter()
                 
                 LikeService.isPostLiked(post) { (isLiked) in
                     post.isLiked = isLiked
+                    
                     dispatchGroup.leave()
                 }
+                
                 return post
             }
+            
             dispatchGroup.notify(queue: .main, execute: {
+                
                 completion(posts)
             })
         })

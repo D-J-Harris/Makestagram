@@ -63,6 +63,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="IER-16-FR3" secondAttribute="trailing" id="Zbg-Au-N6c"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="usernameLabel" destination="sE4-gr-1Ii" id="rC0-XG-UvQ"/>
                                         </connections>
