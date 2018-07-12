@@ -17,6 +17,7 @@
 		BE365BED20F6ABCD00230231 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BEC20F6ABCD00230231 /* PostImageCell.swift */; };
 		BE365BEF20F6BF1D00230231 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BEE20F6BF1D00230231 /* PostHeaderCell.swift */; };
 		BE365BF120F6C1DC00230231 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BF020F6C1DC00230231 /* PostActionCell.swift */; };
+		BE365BF320F72D8300230231 /* LikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE365BF220F72D8300230231 /* LikeService.swift */; };
 		BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87120F46A6F00BE6DA5 /* UserService.swift */; };
 		BE86D87420F4751700BE6DA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87320F4751700BE6DA5 /* Constants.swift */; };
 		BE86D87620F475D300BE6DA5 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */; };
@@ -47,6 +48,7 @@
 		BE365BEC20F6ABCD00230231 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		BE365BEE20F6BF1D00230231 /* PostHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
 		BE365BF020F6C1DC00230231 /* PostActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
+		BE365BF220F72D8300230231 /* LikeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeService.swift; sourceTree = "<group>"; };
 		BE86D87120F46A6F00BE6DA5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		BE86D87320F4751700BE6DA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BE86D87520F475D300BE6DA5 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				BE86D87120F46A6F00BE6DA5 /* UserService.swift */,
 				BE365BDD20F5511A00230231 /* StorageService.swift */,
 				BE365BDF20F5537B00230231 /* PostService.swift */,
+				BE365BF220F72D8300230231 /* LikeService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				BE86D87C20F4903C00BE6DA5 /* MainTabBarController.swift in Sources */,
 				BE86D87220F46A6F00BE6DA5 /* UserService.swift in Sources */,
 				BE365BF120F6C1DC00230231 /* PostActionCell.swift in Sources */,
+				BE365BF320F72D8300230231 /* LikeService.swift in Sources */,
 				BE365BE220F557E100230231 /* Post.swift in Sources */,
 				BE365BED20F6ABCD00230231 /* PostImageCell.swift in Sources */,
 				BE365BE420F56FCB00230231 /* UIImage+Size.swift in Sources */,

@@ -16,6 +16,12 @@ class HomeViewController: UIViewController {
     
     //Properties
     var posts = [Post]()
+    let timeStampFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        
+        return dateFormatter
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,10 +68,18 @@ extension HomeViewController: UITableViewDataSource {
             
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostActionCell", for: indexPath) as! PostActionCell
+            cell.delegate = self
+            configureCell(cell, with: post)
             return cell
         default:
             fatalError("Error: Unexpected index path.")
         }
+    }
+    
+    func configureCell(_ cell: PostActionCell, with post: Post) {
+        cell.timeAgoLabel.text = timeStampFormatter.string(from: post.creationDate)
+        cell.likeCountLabel.text = "\(post.likeCount) likes"
+        cell.likeButton.isSelected = post.isLiked
     }
 }
 
@@ -82,6 +96,33 @@ extension HomeViewController: UITableViewDelegate {
             return PostActionCell.height
         default:
             fatalError()
+        }
+    }
+}
+
+extension HomeViewController: PostActionCellDelegate {
+    func didTapLikeButton(_ likeButton: UIButton, on cell: PostActionCell) {
+        guard let indexPath = tableView.indexPath(for: cell)
+            else {return}
+        
+        likeButton.isUserInteractionEnabled = false
+        let post = posts[indexPath.section]
+        
+        LikeService.setIsLiked(!post.isLiked, for: post) { (success) in
+            defer {
+                likeButton.isUserInteractionEnabled = true
+            }
+            guard success else {return}
+            
+            post.likeCount += !post.isLiked ? 1 : -1
+            post.isLiked = !post.isLiked
+            
+            guard let cell = self.tableView.cellForRow(at: indexPath) as? PostActionCell
+                else {return}
+            
+            DispatchQueue.main.sync {
+                self.configureCell(cell, with: post)
+            }
         }
     }
 }
