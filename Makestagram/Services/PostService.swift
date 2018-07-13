@@ -47,7 +47,21 @@ struct PostService {
             
             rootRef.updateChildValues(updatedData)
         }
+    }
+    
+    static func show(postKey: String, posterUID: String, completion: @escaping (Post?) -> Void) {
+        let postRef = Database.database().reference().child("posts").child(posterUID).child(postKey)
 
-//        postRef.updateChildValues(dict)
+        postRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let post = Post(snapshot: snapshot)
+                else {
+                    return completion(nil)
+            }
+            
+            LikeService.isPostLiked(post, byCurrentUserWithCompletion: { (isLiked) in
+                post.isLiked = isLiked
+                completion(post)
+            })
+        })
     }
 }
